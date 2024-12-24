@@ -120,3 +120,24 @@ for (let num1 = 1; num1 <= 12; num1++) {
   }
   console.log("----------------------");
 }
+
+/*
+While  :-
+*/
+// #1 — Print even numbers
+
+let number1 = 0;
+while (number1 <= 20) {
+  if (number1 % 2 == 0) {
+    console.log(number1);
+  }
+  number1++;
+}
+// #2 — sum of numbers from 1 to 50
+let sum = 1;
+let i = 0;
+while (sum <= 50) {
+  i += sum;
+  sum++;
+}
+console.log(i);
