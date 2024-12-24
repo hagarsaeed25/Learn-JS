@@ -8,7 +8,7 @@ if (number > 0) {
 } else {
   console.log("The number is Negative.");
 }
-
+console.log("----------------------");
 //  #2 — Ticket Pricing
 let age = 25;
 let ticketPrice;
@@ -24,6 +24,7 @@ if (age < 12) {
 }
 console.log("Ticket Price: $" + ticketPrice);
 
+console.log("----------------------");
 // #3 — Number Guessing Game
 let secretNumber = 10;
 let guessingNumber = 6;
@@ -35,6 +36,7 @@ if (guessingNumber == secretNumber) {
 } else {
   console.log("Try a higher number.");
 }
+console.log("----------------------");
 /*
 Switch :-
 */
@@ -59,6 +61,7 @@ switch (true) {
   default:
     console.log("Invalid day!");
 }
+console.log("----------------------");
 // #2 — Calculator Porgram
 console.log("Choose an operation:");
 console.log("1: Addition (+)");
@@ -90,6 +93,7 @@ switch (operation) {
   default:
     console.log("Invalid operation! Please choose a number between 1 and 4.");
 }
+console.log("----------------------");
 /*
 Loops :-
 .while 
@@ -104,6 +108,7 @@ for :-
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
+console.log("----------------------");
 // #2 — Print odd numbers
 
 for (let i = 1; i <= 20; i++) {
@@ -111,7 +116,7 @@ for (let i = 1; i <= 20; i++) {
     console.log(i);
   }
 }
-
+console.log("----------------------");
 // #3 Multiplation Table
 
 for (let num1 = 1; num1 <= 12; num1++) {
@@ -133,6 +138,7 @@ while (number1 <= 20) {
   }
   number1++;
 }
+console.log("----------------------");
 // #2 — sum of numbers from 1 to 50
 let sum = 1;
 let i = 0;
@@ -141,3 +147,23 @@ while (sum <= 50) {
   sum++;
 }
 console.log(i);
+
+console.log("----------------------");
+
+/*
+do while  :-
+*/
+// #1 — Print Numbers from 10 to 1
+let num3 = 10;
+do {
+  console.log(num3);
+  num3--;
+} while (num3 >= 1);
+
+// #2— Multiplation Table
+let num4 =1 ;
+let num5 = 12;
+do{
+console.log(`${num4} * ${num5} = ${num4 * num5}`);
+num4++;
+}while(num4<=10)
