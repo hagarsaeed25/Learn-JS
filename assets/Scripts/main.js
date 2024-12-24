@@ -90,3 +90,33 @@ switch (operation) {
   default:
     console.log("Invalid operation! Please choose a number between 1 and 4.");
 }
+/*
+Loops :-
+.while 
+.do while 
+.for
+*/
+
+/*
+for :-
+*/
+// #1 — Print Numbers from 1 to 10 :-
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+// #2 — Print odd numbers
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+// #3 Multiplation Table
+
+for (let num1 = 1; num1 <= 12; num1++) {
+  for (let num2 = 1; num2 <= 12; num2++) {
+    console.log(`${num1} * ${num2} = ${num1 * num2}`);
+  }
+  console.log("----------------------");
+}
