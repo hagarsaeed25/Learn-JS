@@ -172,6 +172,7 @@ console.log("----------------------");
 /*
 Functions :-
 */
+
 //#1 can use the app or not !
 function nameAndAge(name, age) {
   if (age <= 18) {
@@ -206,9 +207,26 @@ console.log("----------------------");
 //#3 print your name
 let yourName = function (name) {
   return name;
-}
+};
 console.log(yourName("hagar"));
 
+console.log("----------------------");
+//#3 check if the number is positve or negative or 0
+function checkNumber(number) {
+  if (number === 0) {
+    return "Number=0";
+  } else if (number > 0) {
+    return "the Number is positve ";
+  } else if (number < 0) {
+    return "the Number is negative ";
+  } else {
+    return "Is not a number please enter a number..";
+  }
+}
+console.log(checkNumber(6));
+console.log(checkNumber(0));
+console.log(checkNumber(-6));
+console.log(checkNumber("add"));
 console.log("----------------------");
 //#4 Calculator Porgram
 function Calculator(num6, num7, opertion) {
@@ -233,20 +251,112 @@ console.log(Calculator(20, 10, "*"));
 console.log(Calculator(20, 10, "/"));
 
 console.log("----------------------");
+/*
+Object :-
+*/
 
-//#3 check if the number is positve or negative or 0
-function checkNumber(number) {
-  if (number === 0) {
-    return "Number=0";
-  } else if (number > 0) {
-    return "the Number is positve ";
-  } else if (number < 0) {
-    return "the Number is negative ";
-  } else {
-    return "Is not a number please enter a number..";
-  }
-}
-console.log(checkNumber(6));
-console.log(checkNumber(0));
-console.log(checkNumber(-6));
-console.log(checkNumber("add"));
+//#1 book information
+/*
+title
+author 
+year
+genre
+pages
+publisher
+languge
+rating
+*/
+
+let book = {
+  title: "Atomic Habits",
+  author: "James Clear",
+  year: 2018,
+  genre: "Self-help",
+  pages: 320,
+  publisher: "Penguin Random House",
+  languge: "English",
+  rating: 4.8,
+};
+console.log(book.author);
+console.log(book.rating);
+console.log(book);
+
+console.log("----------------------");
+
+//#2 Person information
+/*
+fristName
+lastName
+birthYear
+professtion
+address
+college
+*/
+let Person = {
+  fristName: "Hagar",
+  lastName: "Saeed",
+  birthYear: 2005,
+  professtion: "Student",
+  address: "Alex:elbhera:badr",
+  college: "technology",
+};
+console.log(Person.fristName);
+console.log(Person.birthYear);
+console.log(Person);
+
+console.log("----------------------");
+
+//#3 moive information
+/*
+title
+director
+year
+genre
+duration
+rating
+cast
+*/
+let moive = {
+  title: "Smile",
+  director: "Parker Finn",
+  year: 2022,
+  genre: "Horror, Thriller",
+  duration: 115,
+  rating: 6.6,
+  cast: ["Sosie Bacon", "Kyle Gallner", "Caitlin Stasey"],
+};
+console.log(moive.title);
+console.log(moive.genre);
+console.log(moive);
+
+console.log("----------------------");
+
+//#4 product Description
+/*
+  name
+  brand
+  price
+  inStock
+  specifications: {
+    screen
+    camera
+    battery
+    }
+*/
+let product = {
+  name: "Smartphone",
+  brand: "Samsung",
+  price: 799,
+  inStock: true,
+  specifications: {
+    screen: "6.5 inches",
+    camera: "48 MP",
+    battery: "4000 mAh",
+  },
+};
+
+console.log(product.name);
+console.log(product.specifications);
+console.log(product);
+
+console.log("----------------------");
