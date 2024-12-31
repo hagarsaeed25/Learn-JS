@@ -159,11 +159,94 @@ do {
   console.log(num3);
   num3--;
 } while (num3 >= 1);
-
+console.log("----------------------");
 // #2— Multiplation Table
-let num4 =1 ;
+let num4 = 1;
 let num5 = 12;
-do{
-console.log(`${num4} * ${num5} = ${num4 * num5}`);
-num4++;
-}while(num4<=10)
+do {
+  console.log(`${num4} * ${num5} = ${num4 * num5}`);
+  num4++;
+} while (num4 <= 10);
+
+console.log("----------------------");
+/*
+Functions :-
+*/
+//#1 can use the app or not !
+function nameAndAge(name, age) {
+  if (age <= 18) {
+    return `sorry ${name} you can't use the app`;
+  } else {
+    return `Hi ${name} your age is ${age} you can use the app`;
+  }
+}
+console.log(nameAndAge("hagar", 19));
+console.log(nameAndAge("sara", 16));
+
+console.log("----------------------");
+//#2 check if the number is positve or negative or 0
+function checkNumber(number) {
+  if (number === 0) {
+    return "Number=0";
+  } else if (number > 0) {
+    return "the Number is positve ";
+  } else if (number < 0) {
+    return "the Number is negative ";
+  } else {
+    return "Is not a number please enter a number..";
+  }
+}
+console.log(checkNumber(6));
+console.log(checkNumber(0));
+console.log(checkNumber(-6));
+console.log(checkNumber("add"));
+
+console.log("----------------------");
+
+//#3 print your name
+let yourName = function (name) {
+  return name;
+}
+console.log(yourName("hagar"));
+
+console.log("----------------------");
+//#4 Calculator Porgram
+function Calculator(num6, num7, opertion) {
+  if (opertion === "+") {
+    return num6 + num7;
+  } else if (opertion === "-") {
+    return num6 - num7;
+  } else if (opertion === "*") {
+    return num6 * num7;
+  } else if (opertion === "/") {
+    if (num7 === 0) {
+      return "Error Division by Zero is not Allowed !";
+    }
+    return num6 / num7;
+  } else {
+    return "Error: Unknown opertion!";
+  }
+}
+console.log(Calculator(20, 10, "+"));
+console.log(Calculator(20, 10, "-"));
+console.log(Calculator(20, 10, "*"));
+console.log(Calculator(20, 10, "/"));
+
+console.log("----------------------");
+
+//#3 check if the number is positve or negative or 0
+function checkNumber(number) {
+  if (number === 0) {
+    return "Number=0";
+  } else if (number > 0) {
+    return "the Number is positve ";
+  } else if (number < 0) {
+    return "the Number is negative ";
+  } else {
+    return "Is not a number please enter a number..";
+  }
+}
+console.log(checkNumber(6));
+console.log(checkNumber(0));
+console.log(checkNumber(-6));
+console.log(checkNumber("add"));
